@@ -1,2 +1,2 @@
 # stochasticsim-1
-First paper for Stochastic Simulation course on Mandelbrot set.
+First assignment for the course Stochastic Simulation course, on the Mandelbrot set and its convergence properties.
