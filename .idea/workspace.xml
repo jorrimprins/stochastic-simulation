@@ -6,7 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5f21d6a-b6cc-46bf-bb76-66292d29073a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stochasticsim-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stochasticsim-1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/simulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/simulate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="simulate" type="PythonConfigurationType" factoryName="Python">
+      <module name="stochasticsim-1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/simulate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -41,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604395904783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Change workspace">
+      <created>1604396233408</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604396233408</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,28 +117,73 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add test commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add test commit" />
+    <MESSAGE value="Change workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change workspace" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="243" key="#Notifications" timestamp="1604394760388">
       <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="430" y="243" key="#Notifications/0.23.1440.779@0.23.1440.779" timestamp="1604394760388" />
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1604395904574">
+    <state x="184" y="74" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604396880556">
       <screen x="0" y="23" width="1440" height="779" />
     </state>
-    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.779@0.23.1440.779" timestamp="1604395904574" />
+    <state x="184" y="74" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.779@0.23.1440.779" timestamp="1604396880556" />
+    <state x="911" y="117" key="#xdebugger.evaluate" timestamp="1604397286573">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state x="911" y="117" key="#xdebugger.evaluate/0.23.1440.779@0.23.1440.779" timestamp="1604397286573" />
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1604396233265">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.779@0.23.1440.779" timestamp="1604396233265" />
     <state x="467" y="286" key="Github.CreatePullRequestDialog" timestamp="1604396148669">
       <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="467" y="286" key="Github.CreatePullRequestDialog/0.23.1440.779@0.23.1440.779" timestamp="1604396148669" />
+    <state width="1379" height="230" key="GridCell.Tab.0.bottom" timestamp="1604397492783">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.0.bottom/0.23.1440.779@0.23.1440.779" timestamp="1604397492783" />
+    <state width="1379" height="230" key="GridCell.Tab.0.center" timestamp="1604397492781">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.0.center/0.23.1440.779@0.23.1440.779" timestamp="1604397492781" />
+    <state width="1379" height="230" key="GridCell.Tab.0.left" timestamp="1604397492780">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.0.left/0.23.1440.779@0.23.1440.779" timestamp="1604397492780" />
+    <state width="1379" height="230" key="GridCell.Tab.0.right" timestamp="1604397492782">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.0.right/0.23.1440.779@0.23.1440.779" timestamp="1604397492782" />
+    <state width="1379" height="230" key="GridCell.Tab.1.bottom" timestamp="1604397492785">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.1.bottom/0.23.1440.779@0.23.1440.779" timestamp="1604397492785" />
+    <state width="1379" height="230" key="GridCell.Tab.1.center" timestamp="1604397492784">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.1.center/0.23.1440.779@0.23.1440.779" timestamp="1604397492784" />
+    <state width="1379" height="230" key="GridCell.Tab.1.left" timestamp="1604397492784">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.1.left/0.23.1440.779@0.23.1440.779" timestamp="1604397492784" />
+    <state width="1379" height="230" key="GridCell.Tab.1.right" timestamp="1604397492785">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state width="1379" height="230" key="GridCell.Tab.1.right/0.23.1440.779@0.23.1440.779" timestamp="1604397492785" />
     <state x="450" y="122" key="RollbackChangesDialog" timestamp="1604396220940">
       <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="450" y="122" key="RollbackChangesDialog/0.23.1440.779@0.23.1440.779" timestamp="1604396220940" />
-    <state x="221" y="51" key="SettingsEditor" timestamp="1604396086951">
+    <state x="221" y="51" key="SettingsEditor" timestamp="1604397157274">
       <screen x="0" y="23" width="1440" height="779" />
     </state>
-    <state x="221" y="51" key="SettingsEditor/0.23.1440.779@0.23.1440.779" timestamp="1604396086951" />
+    <state x="221" y="51" key="SettingsEditor/0.23.1440.779@0.23.1440.779" timestamp="1604397157274" />
+    <state x="320" y="152" key="Vcs.Push.Dialog.v2" timestamp="1604396247786">
+      <screen x="0" y="23" width="1440" height="779" />
+    </state>
+    <state x="320" y="152" key="Vcs.Push.Dialog.v2/0.23.1440.779@0.23.1440.779" timestamp="1604396247786" />
   </component>
 </project>
