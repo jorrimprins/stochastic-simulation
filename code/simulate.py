@@ -2,7 +2,7 @@ from numba import jit
 import numpy as np
 import seaborn as sns
 import matplotlib as plt
-sns.color_palette("magma", as_cmap=True)
+sns.set_style("darkgrid")
 
 @jit
 def iterate(c, n):
@@ -42,7 +42,7 @@ def view_mb(range_real, range_im, size, n, dpi=100):
     #y_ticks = ymin + (ymax - ymin) * ticks / img_width
     #plt.yticks(ticks, y_ticks)
     #norm = colors.PowerNorm(0.1)
-    fig.plot(mb_set.T)#, origin='lower', norm=norm)
+    fig.plot(mb_set.T,cmap='magma')#, origin='lower', norm=norm)
     fig.show()
 
 
