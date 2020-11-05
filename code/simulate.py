@@ -66,3 +66,24 @@ def view_mb(range_real, range_im, size, n=100, dpi=100, colormap='Blues_r'):
     ax.set_yticklabels([range_im[0], (range_im[0]+range_im[1])/ 2, range_im[1]])
     ax.set_xticks([0, x_dim / 2, x_dim])
     ax.set_xticklabels([range_real[0], (range_real[0]+range_real[1])/ 2, range_real[1]])
+
+def est_area(n_list,s_list,reps=50,range_real=(-2,.5),range_im=(-1.1,1.1),sampling='pure'):
+
+    total_area = (range_real[1]-range_real[0])*(range_im[1]-range_im[0])
+    area = np.zeros(len(n_list),len(s_list),reps)
+    for n in n_list:
+        for s in s_list:
+            for i in range(reps):
+                if sampling == 'pure':
+                    sample_real = np.random.uniform(range_real[0],range_real[1],s)
+                    sample_im = np.random.uniform(range_im[0],range_im[1],s)
+                else:
+                    sample_real = np.random.uniform(range_real[0], range_real[1], s)
+                    sample_im = np.random.uniform(range_im[0], range_im[1], s)
+                mandel = 0
+                for s_r, s_im in (sample_real, sample_im):
+                    iter = iterate(complex(s_r,s_im), n)
+                    if iter == 0:
+                        mandel += 1
+                area[n][s][i] = mandel/s*total_area
+
