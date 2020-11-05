@@ -67,6 +67,7 @@ def view_mb(range_real, range_im, size, n=100, dpi=100, colormap='Blues_r'):
     ax.set_xticks([0, x_dim / 2, x_dim])
     ax.set_xticklabels([range_real[0], (range_real[0]+range_real[1])/ 2, range_real[1]])
 
+@jit
 def est_area(n_list,s_list,reps=50,range_real=(-2,.5),range_im=(-1.1,1.1),sampling='pure'):
 
     total_area = (range_real[1]-range_real[0])*(range_im[1]-range_im[0])
