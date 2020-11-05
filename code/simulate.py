@@ -59,3 +59,8 @@ def view_mb(range_real, range_im, size, n=100, dpi=100, colormap='Blues_r'):
 
     plt.figure(figsize=size, dpi=dpi)
     plt.imshow(colors, zorder=1, interpolation='none')
+    ax = plt.gca()
+    ax.set_yticks([0, y_dim / 2, y_dim])
+    ax.set_yticklabels([range_im[0], sum(range_im) / 2, range_im[1]])
+    ax.set_xticks([0, x_dim / 2, x_dim])
+    ax.set_yticklabels([range_real[0], sum(range_real) / 2, range_real[1]])

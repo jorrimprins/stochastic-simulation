@@ -111,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604584522467</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Allow adjustable cmap">
+      <created>1604585447220</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604585447220</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +167,8 @@
     <MESSAGE value="Edit sns settings" />
     <MESSAGE value="Set right colors" />
     <MESSAGE value="Redo of visualisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redo of visualisation" />
+    <MESSAGE value="Allow adjustable cmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow adjustable cmap" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="243" key="#Notifications" timestamp="1604394760388">
@@ -177,10 +185,10 @@
     </state>
     <state x="909" y="198" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1604510899687" />
     <state x="911" y="117" key="#xdebugger.evaluate/0.23.1440.779@0.23.1440.779" timestamp="1604397286573" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1604584522280">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1604585447077">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604584522280" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604585447077" />
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.779@0.23.1440.779" timestamp="1604397563679" />
     <state width="272" height="466" key="DebuggerActiveHint" timestamp="1604509599388">
       <screen x="0" y="0" width="1440" height="900" />
