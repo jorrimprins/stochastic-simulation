@@ -31,9 +31,6 @@
       <module name="stochasticsim-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -107,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604531143193</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Redo of visualisation">
+      <created>1604584522467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604584522467</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +159,8 @@
     <MESSAGE value="Edit cmap spec" />
     <MESSAGE value="Edit sns settings" />
     <MESSAGE value="Set right colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set right colors" />
+    <MESSAGE value="Redo of visualisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redo of visualisation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="243" key="#Notifications" timestamp="1604394760388">
@@ -172,10 +177,10 @@
     </state>
     <state x="909" y="198" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1604510899687" />
     <state x="911" y="117" key="#xdebugger.evaluate/0.23.1440.779@0.23.1440.779" timestamp="1604397286573" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1604531143024">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1604584522280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604531143024" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604584522280" />
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.779@0.23.1440.779" timestamp="1604397563679" />
     <state width="272" height="466" key="DebuggerActiveHint" timestamp="1604509599388">
       <screen x="0" y="0" width="1440" height="900" />
@@ -234,10 +239,10 @@
     </state>
     <state x="221" y="32" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604531005324" />
     <state x="221" y="51" key="SettingsEditor/0.23.1440.779@0.23.1440.779" timestamp="1604397157274" />
-    <state x="320" y="149" key="Vcs.Push.Dialog.v2" timestamp="1604531147412">
+    <state x="320" y="149" key="Vcs.Push.Dialog.v2" timestamp="1604584524147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="149" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604531147412" />
+    <state x="320" y="149" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604584524147" />
     <state x="320" y="152" key="Vcs.Push.Dialog.v2/0.23.1440.779@0.23.1440.779" timestamp="1604397649947" />
     <state x="474" y="191" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1604584502722">
       <screen x="0" y="0" width="1440" height="900" />
@@ -250,13 +255,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/simulate.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
