@@ -54,13 +54,15 @@ def view_mb(range_real, range_im, size, n=100, dpi=100, colormap='Blues_r'):
         for j in range(y_dim):
             c = complex(range_real[0] + i * delta, range_im[0] + j * delta)
             iter = iterate(c, n)
-            if iter < n:
+            if iter == 0:
+                colors[j, i] = (0,0,0)
+            else:
                 colors[j, i] = palette[iter]
 
     plt.figure(figsize=size, dpi=dpi)
     plt.imshow(colors, zorder=1, interpolation='none')
     ax = plt.gca()
     ax.set_yticks([0, y_dim / 2, y_dim])
-    ax.set_yticklabels([range_im[0], sum(range_im) / 2, range_im[1]])
+    ax.set_yticklabels([range_im[0], (range_im[0]+range_im[1])/ 2, range_im[1]])
     ax.set_xticks([0, x_dim / 2, x_dim])
-    ax.set_yticklabels([range_real[0], sum(range_real) / 2, range_real[1]])
+    ax.set_xticklabels([range_real[0], (range_real[0]+range_real[1])/ 2, range_real[1]])
