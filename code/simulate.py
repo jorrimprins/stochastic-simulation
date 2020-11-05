@@ -35,17 +35,40 @@ def set_mb(range_real, range_im, size, n=100):
 
 @jit
 def view_mb(range_real, range_im, size, n=100, dpi=100):
-    plotsize = [i * dpi for i in size]
-    mb_set = set_mb(range_real, range_im, plotsize, n)
 
-    plt.figure(figsize=size, dpi=dpi)
+    #Define colors
+    palette = sns.color_palette("Blues_r", n)
+    delta_real = range_real[1] - range_real[0]
+    delta_im = range_im[1] - range_im[0]
+    if delta_real >= delta_im:
+        x_dim = int(dpi)
+        y_dim = int(x_dim * (delta_im / delta_real))
+        delta = delta_real / x_dim
+    else:
+        y_dim = int(dpi)
+        x_dim = int(y_dim * (delta_real / delta_im))
+        delta = delta_im / dpi
+
+    colors = np.zeros((y_dim, x_dim, 3))
+    for i in range(x_dim):
+        for j in range(y_dim):
+            c = complex(range_real[0] + i * delta, range_im[0] + j * delta)
+            iter = iterate(c, n)
+            if iter < n:
+                colors[j, i] = palette[iter]
+    #plotsize = [i * dpi for i in size]
+    #mb_set = set_mb(range_real, range_im, plotsize, n)
+
+    plt.figure(figsize=size) #dpi=dpi
+    plt.imshow(colors, zorder=1, interpolation='none')
+
     #ticks = np.arange(0, img_width, 3 * dpi)
     #x_ticks = xmin + (xmax - xmin) * ticks / img_width
     #plt.xticks(ticks, x_ticks)
     #y_ticks = ymin + (ymax - ymin) * ticks / img_width
     #plt.yticks(ticks, y_ticks)
-    norm = colors.PowerNorm(0.1)
-    plt.plot(mb_set.T, cmap='gnuplot2', origin='lower', norm=norm)
-    plt.show()
+    #norm = colors.PowerNorm(0.1)
+    #plt.plot(mb_set.T, cmap='gnuplot2', origin='lower', norm=norm)
+    #plt.show()
 
 view_mb((-1.5,.25),(-.8,.8),(1,1),100)
