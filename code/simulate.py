@@ -78,6 +78,11 @@ def est_area(n_list,s_list,reps=50,range_real=(-2,.5),range_im=(-1.1,1.1),sampli
                 if sampling == 'pure':
                     sample_real = np.random.uniform(range_real[0],range_real[1],s)
                     sample_im = np.random.uniform(range_im[0],range_im[1],s)
+                elif sampling == 'lhs':
+                    lim_real = np.linspace(range_real[0], range_real[1], (s + 1))
+                    sample_real = np.random.permutation(np.random.uniform(lim_real[0:s], lim_real[1:(s + 1)]))
+                    lim_im = np.linspace(range_im[0], range_im[1], (s + 1))
+                    sample_im = np.random.uniform(lim_im[0:s], lim_im[1:(s + 1)])
                 else:
                     sample_real = np.random.uniform(range_real[0], range_real[1], s)
                     sample_im = np.random.uniform(range_im[0], range_im[1], s)
