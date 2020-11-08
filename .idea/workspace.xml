@@ -31,9 +31,6 @@
       <module name="stochasticsim-1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -156,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604591983305</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add latin hypercube sampling">
+      <created>1604838088613</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604838088613</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +215,8 @@
     <MESSAGE value="Area estimation function" />
     <MESSAGE value="Add jit for area estimation function" />
     <MESSAGE value="Edit small errors to area function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit small errors to area function" />
+    <MESSAGE value="Add latin hypercube sampling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add latin hypercube sampling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="243" key="#Notifications" timestamp="1604394760388">
@@ -228,11 +233,11 @@
     </state>
     <state x="944" y="202" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1604591652561" />
     <state x="874" y="174" key="#xdebugger.evaluate/0.23.1440.779@0.23.1440.779" timestamp="1604837979835" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1604591983145">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1604838088424">
+      <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="297" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604591983145" />
-    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.779@0.23.1440.779" timestamp="1604397563679" />
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.779@0.23.1440.779" timestamp="1604838088424" />
     <state width="272" height="466" key="DebuggerActiveHint" timestamp="1604509599388">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -322,13 +327,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/simulate.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
