@@ -23,9 +23,9 @@ def iterate(c, n=100):
 
 @jit
 def set_mb(range_real, range_im, size, n=100):
-    ## Creates set for given ranges, range_real, range_im and size are tuples.
-    range_real = np.linspace(range_real[0],range_real[1],size[0])
-    range_im = np.linspace(range_im[0],range_im[1],size[1])
+    # Creates set for given ranges, range_real, range_im and size are tuples.
+    range_real = np.linspace(range_real[0], range_real[1], size[0])
+    range_im = np.linspace(range_im[0], range_im[1], size[1])
     mb_set = np.zeros(size)
 
     for i in range(size[0]):
@@ -36,7 +36,7 @@ def set_mb(range_real, range_im, size, n=100):
 @jit
 def view_mb(range_real, range_im, size, n=100, dpi=100, colormap='Blues_r'):
 
-    #Define colors
+    # Define colors en plot the mandelbrot set with them
     palette = sns.color_palette(colormap, n)
     delta_real = range_real[1] - range_real[0]
     delta_im = range_im[1] - range_im[0]
@@ -53,38 +53,70 @@ def view_mb(range_real, range_im, size, n=100, dpi=100, colormap='Blues_r'):
     for i in range(x_dim):
         for j in range(y_dim):
             c = complex(range_real[0] + i * delta, range_im[0] + j * delta)
-            iter = iterate(c, n)
-            if iter == 0:
-                colors[j, i] = (0,0,0)
+            n_iter = iterate(c, n)
+            if n_iter == 0:
+                colors[j, i] = (0, 0, 0)
             else:
-                colors[j, i] = palette[iter]
+                colors[j, i] = palette[n_iter]
 
     plt.figure(figsize=size, dpi=dpi)
     plt.imshow(colors, zorder=1, interpolation='none')
     ax = plt.gca()
     ax.set_yticks([0, y_dim / 2, y_dim])
-    ax.set_yticklabels([range_im[0], (range_im[0]+range_im[1])/ 2, range_im[1]])
+    ax.set_yticklabels([range_im[0], (range_im[0]+range_im[1]) / 2, range_im[1]])
     ax.set_xticks([0, x_dim / 2, x_dim])
-    ax.set_xticklabels([range_real[0], (range_real[0]+range_real[1])/ 2, range_real[1]])
+    ax.set_xticklabels([range_real[0], (range_real[0]+range_real[1]) / 2, range_real[1]])
+
 
 @jit
-def est_area(n_list,s_list,reps=50,range_real=(-2,.5),range_im=(-1.1,1.1),sampling='pure'):
+def ortho_sample(s, range_real, range_im, gridsize):
+
+    # Produces orthogonal sample of size s within ranges range_real and range_im
+    # Gridsize defines number of cut-offs on both axis
+
+    s_sub = int(s / gridsize)
+    s_sub2 = int(s / (gridsize ** 2))
+
+    lim_real = np.linspace(range_real[0], range_real[1], (s + 1))
+    help_real = np.random.uniform(lim_real[0:s], lim_real[1:(s + 1)])
+    lim_im = np.linspace(range_im[0], range_im[1], (s + 1))
+    help_im = np.random.uniform(lim_im[0:s], lim_im[1:(s + 1)])
+
+    sample_real = np.empty(s)
+    sample_im = np.empty(s)
+    for p in range(gridsize):
+        sample_real[p * s_sub:(p + 1) * s_sub] = np.random.permutation(help_real[p * s_sub:(p + 1) * s_sub])
+        sample_im_t = np.random.permutation(help_im[p * s_sub:(p + 1) * s_sub])
+        for q in range(gridsize):
+            index = q * s_sub + p * s_sub2
+            sample_im[index:index + s_sub2] = sample_im_t[q * s_sub2:(q + 1) * s_sub2]
+    return sample_real, sample_im
+
+@jit
+def est_area(n_list, s_list, reps=50, range_real=(-2, .5), range_im=(-1.1, 1.1), sampling='pure', gridsize=3):
 
     total_area = (range_real[1]-range_real[0])*(range_im[1]-range_im[0])
-    area = np.empty((len(n_list),len(s_list),reps))
+    area = np.empty((len(n_list), len(s_list), reps))
     for n in n_list:
         for s in s_list:
             for i in range(reps):
                 if sampling == 'pure':
-                    sample_real = np.random.uniform(range_real[0],range_real[1],s)
-                    sample_im = np.random.uniform(range_im[0],range_im[1],s)
+                    sample_real = np.random.uniform(range_real[0], range_real[1], s)
+                    sample_im = np.random.uniform(range_im[0], range_im[1], s)
+                elif sampling == 'lhs':
+                    lim_real = np.linspace(range_real[0], range_real[1], (s + 1))
+                    sample_real = np.random.permutation(np.random.uniform(lim_real[0:s], lim_real[1:(s + 1)]))
+                    lim_im = np.linspace(range_im[0], range_im[1], (s + 1))
+                    sample_im = np.random.uniform(lim_im[0:s], lim_im[1:(s + 1)])
+                elif sampling == 'ortho':
+                    sample_real, sample_im = ortho_sample(s, range_real, range_im, gridsize)
                 else:
                     sample_real = np.random.uniform(range_real[0], range_real[1], s)
                     sample_im = np.random.uniform(range_im[0], range_im[1], s)
                 mandel = 0
                 for s_r, s_im in zip(sample_real, sample_im):
-                    iter = iterate(complex(s_r,s_im), n)
-                    if iter == 0:
+                    n_iter = iterate(complex(s_r, s_im), n)
+                    if n_iter == 0:
                         mandel += 1
                 area[n_list.index(n)][s_list.index(s)][i] = mandel/s*total_area
     return area
