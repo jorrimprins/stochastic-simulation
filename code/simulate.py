@@ -109,9 +109,19 @@ def est_area(n_list, s_list, reps=50, range_real=(-2, .5), range_im=(-1.1, 1.1),
                     for s_r, s_im in zip(sample_real, sample_im):
                         n_iter = iterate(complex(s_r, s_im), n)
                         if n_iter == 0:
-                            phi1 = uniform.pdf(s_im,loc=range_im[0],scale=range_im[1]-range_im[0])
-                            phi2 = norm.pdf(s_im,loc=0,scale=0.5)
-                            mandel += 1*phi1/phi2
+                            phi1 = uniform.pdf(s_im, loc=range_im[0], scale=range_im[1] - range_im[0])
+                            phi2 = norm.pdf(s_im, loc=0, scale=0.5)
+                            mandel += 1 * phi1 / phi2
+                elif sampling == 'importance2':
+                    sample_real = np.random.normal(-0.75, 0.6, s)
+                    sample_im = np.random.uniform(range_im[0], range_im[1], s)
+                    mandel = 0
+                    for s_r, s_im in zip(sample_real, sample_im):
+                        n_iter = iterate(complex(s_r, s_im), n)
+                        if n_iter == 0:
+                            phi1 = uniform.pdf(s_r, loc=range_real[0], scale=range_real[1] - range_real[0])
+                            phi2 = norm.pdf(s_r, loc=-0.75, scale=0.6)
+                            mandel += 1 * phi1 / phi2
                 else:
                     if sampling == 'pure':
                         sample_real = np.random.uniform(range_real[0], range_real[1], s)
