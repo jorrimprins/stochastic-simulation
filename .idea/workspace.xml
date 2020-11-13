@@ -5,7 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5f21d6a-b6cc-46bf-bb76-66292d29073a" name="Default Changelist" comment="" />
+    <list default="true" id="c5f21d6a-b6cc-46bf-bb76-66292d29073a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stochasticsim-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stochasticsim-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,11 +311,11 @@
       <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="450" y="122" key="RollbackChangesDialog/0.23.1440.779@0.23.1440.779" timestamp="1604396220940" />
-    <state x="221" y="32" key="SettingsEditor" timestamp="1604531005324">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="294" y="44" key="SettingsEditor" timestamp="1605271530451">
+      <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="221" y="32" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604531005324" />
-    <state x="221" y="51" key="SettingsEditor/0.23.1440.779@0.23.1440.779" timestamp="1604397157274" />
+    <state x="294" y="44" key="SettingsEditor/0.23.1440.779@0.23.1440.779" timestamp="1605271530451" />
     <state x="320" y="152" key="Vcs.Push.Dialog.v2" timestamp="1604843064275">
       <screen x="0" y="23" width="1440" height="779" />
     </state>

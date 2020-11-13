@@ -3,6 +3,8 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import warnings
+from scipy.stats import norm, uniform
+
 warnings.filterwarnings('ignore')
 
 sns.set_style("darkgrid")
@@ -93,30 +95,42 @@ def ortho_sample(s, range_real, range_im, gridsize):
     return sample_real, sample_im
 
 @jit
-def est_area(n_list, s_list, reps=50, range_real=(-2, .5), range_im=(-1.1, 1.1), sampling='pure', gridsize=3):
+def est_area(n_list, s_list, reps=50, range_real=(-2, .5), range_im=(-1.1, 1.1), sampling='pure', gridsize=5):
 
     total_area = (range_real[1]-range_real[0])*(range_im[1]-range_im[0])
     area = np.empty((len(n_list), len(s_list), reps))
     for n in n_list:
         for s in s_list:
             for i in range(reps):
-                if sampling == 'pure':
+                if sampling == 'importance':
                     sample_real = np.random.uniform(range_real[0], range_real[1], s)
-                    sample_im = np.random.uniform(range_im[0], range_im[1], s)
-                elif sampling == 'lhs':
-                    lim_real = np.linspace(range_real[0], range_real[1], (s + 1))
-                    sample_real = np.random.permutation(np.random.uniform(lim_real[0:s], lim_real[1:(s + 1)]))
-                    lim_im = np.linspace(range_im[0], range_im[1], (s + 1))
-                    sample_im = np.random.uniform(lim_im[0:s], lim_im[1:(s + 1)])
-                elif sampling == 'ortho':
-                    sample_real, sample_im = ortho_sample(s, range_real, range_im, gridsize)
+                    sample_im = np.random.normal(0, 0.5, s)
+                    mandel = 0
+                    for s_r, s_im in zip(sample_real, sample_im):
+                        n_iter = iterate(complex(s_r, s_im), n)
+                        if n_iter == 0:
+                            phi1 = uniform.pdf(s_im,loc=range_im[0],scale=range_im[1]-range_im[0])
+                            phi2 = norm.pdf(s_im,loc=0,scale=0.5)
+                            mandel += 1*phi1/phi2
                 else:
-                    sample_real = np.random.uniform(range_real[0], range_real[1], s)
-                    sample_im = np.random.uniform(range_im[0], range_im[1], s)
-                mandel = 0
-                for s_r, s_im in zip(sample_real, sample_im):
-                    n_iter = iterate(complex(s_r, s_im), n)
-                    if n_iter == 0:
-                        mandel += 1
+                    if sampling == 'pure':
+                        sample_real = np.random.uniform(range_real[0], range_real[1], s)
+                        sample_im = np.random.uniform(range_im[0], range_im[1], s)
+                    elif sampling == 'lhs':
+                        lim_real = np.linspace(range_real[0], range_real[1], (s + 1))
+                        sample_real = np.random.permutation(np.random.uniform(lim_real[0:s], lim_real[1:(s + 1)]))
+                        lim_im = np.linspace(range_im[0], range_im[1], (s + 1))
+                        sample_im = np.random.uniform(lim_im[0:s], lim_im[1:(s + 1)])
+                    elif sampling == 'ortho':
+                        sample_real, sample_im = ortho_sample(s, range_real, range_im, gridsize)
+                    else:
+                        print('Undefined sampling method, used pure sampling instead.')
+                        sample_real = np.random.uniform(range_real[0], range_real[1], s)
+                        sample_im = np.random.uniform(range_im[0], range_im[1], s)
+                    mandel = 0
+                    for s_r, s_im in zip(sample_real, sample_im):
+                        n_iter = iterate(complex(s_r, s_im), n)
+                        if n_iter == 0:
+                            mandel += 1
                 area[n_list.index(n)][s_list.index(s)][i] = mandel/s*total_area
     return area
