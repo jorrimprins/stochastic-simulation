@@ -1,2 +1,4 @@
-# stochasticsim-1
-First assignment for the course Stochastic Simulation course, on the Mandelbrot set and its convergence properties.
+# stochasticsimulation
+Coding assignments for the course Stochastic Simulation at the Universiteit van Amsterdam (2020/2021).
+First assignment on the Mandelbrot set and its convergence properties.
+
