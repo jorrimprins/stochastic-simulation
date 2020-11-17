@@ -6,7 +6,6 @@ import warnings
 from scipy.stats import norm, uniform
 
 warnings.filterwarnings('ignore')
-
 sns.set_style("darkgrid")
 
 @jit
@@ -25,6 +24,7 @@ def iterate(c, n=100):
 
 @jit
 def set_mb(range_real, range_im, size, n=100):
+
     # Creates set for given ranges, range_real, range_im and size are tuples.
     range_real = np.linspace(range_real[0], range_real[1], size[0])
     range_im = np.linspace(range_im[0], range_im[1], size[1])
@@ -38,7 +38,7 @@ def set_mb(range_real, range_im, size, n=100):
 @jit
 def view_mb(range_real, range_im, size, n=100, dpi=100, colormap='Blues_r'):
 
-    # Define colors en plot the mandelbrot set with them
+    # Define colors en plot the mandelbrot set with them n iterations, dpi=number of pixels and colormap.
     palette = sns.color_palette(colormap, n)
     delta_real = range_real[1] - range_real[0]
     delta_im = range_im[1] - range_im[0]
@@ -96,6 +96,10 @@ def ortho_sample(s, range_real, range_im, gridsize):
 
 @jit
 def est_area(n_list, s_list, reps=50, range_real=(-2, .5), range_im=(-1.1, 1.1), sampling='pure', gridsize=5):
+
+    # Estimate the area of the mandelbrot set by hit and miss transform/pixel counting
+    # n_list en s_list are lists that specify the number of iterations and samples used respectively
+    # Sampling method can be defined by passing string to sampling variable
 
     total_area = (range_real[1]-range_real[0])*(range_im[1]-range_im[0])
     area = np.empty((len(n_list), len(s_list), reps))

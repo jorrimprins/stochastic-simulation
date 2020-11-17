@@ -8,15 +8,10 @@
     <list default="true" id="c5f21d6a-b6cc-46bf-bb76-66292d29073a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/.ipynb_checkpoints/Stoch_sim_1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/.ipynb_checkpoints/Stoch_sim_1-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Figures/i1000_inclconfidence.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/Figures/i1000_inclconfidence.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Figures/mandelbrot.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Stoch_sim_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/code/Stoch_sim_1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/diff_area_iter.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/diff_area_sample.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/diff_arrea_max_iter.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/i1000_allS.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/i1000_allS_extrareps.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/imp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/imp.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/mandelbrot.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/code/mandelbrot.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ortho.csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/ortho.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/simulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/simulate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
