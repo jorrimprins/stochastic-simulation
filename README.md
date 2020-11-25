@@ -1,5 +1,5 @@
 # Stochastic Simulation
-Coding assignments for the course Stochastic Simulation at the Universiteit van Amsterdam (2020/2021).
+Coding assignments for the course Stochastic Simulation at the University of Amsterdam (2020/2021).
 
 #### Authors
 
