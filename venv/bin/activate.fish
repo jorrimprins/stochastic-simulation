@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/jorrimprins/Documents/GitHub/stochasticsim-1/Assignment 2/venv"
+set -gx VIRTUAL_ENV "/Users/jorrimprins/Documents/GitHub/stochastic-simulation/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

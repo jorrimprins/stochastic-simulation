@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/jorrimprins/Documents/GitHub/stochasticsim-1/Assignment 2/venv/bin/python" "$0" "$@"
-' '''
+#!/Users/jorrimprins/Documents/GitHub/stochastic-simulation/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
