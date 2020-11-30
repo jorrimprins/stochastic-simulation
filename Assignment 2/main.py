@@ -102,7 +102,7 @@ MU = 1                                                 # Mu is set to 1 for clar
 LAM_LIST = [0.9, 0.85, 0.8, 0.75, 0.7, 0.6, 0.5]   # Lambda varies to vary rho
 DISTRIBUTIONS = ['deterministic','hyperexp','erlang']      # Service distributions
 SIM_TIME = 20000                                       # Simulation time
-NUM_SIM = 100                                     # Number of replications
+NUM_SIM = 300                                     # Number of replications
 
 
 start = time.time()
@@ -122,7 +122,7 @@ for NUM_SERVERS in NUM_SERVERS_LIST:
             avg_wait.append(np.mean(waiting_times))
         print(time.time()-start)
         df_wait[str(('exp',NUM_SERVERS,LAM))] = avg_wait
-print('First loop done in '+str(time.time()-start)+' minutes')
+print('First loop done in '+str((time.time()-start)/60)+' minutes')
 
 # 2. Loop over all lambdas for n=1 and priority scheduling
 NUM_SERVERS = 1
@@ -138,7 +138,7 @@ for LAM in LAM_LIST:
         avg_wait.append(np.mean(waiting_times))
     print(time.time()-start)
     df_wait[str(('priority',NUM_SERVERS,LAM))] = avg_wait
-print('Second loop done after '+str(time.time()-start)+' minutes')
+print('Second loop done after '+str((time.time()-start)/60)+' minutes')
 
 
 # 3. Loop over all lambdas, n=[1,2] and various distributions
@@ -157,7 +157,7 @@ for DIST in DISTRIBUTIONS:
             print(time.time()-start)
             df_wait[str((DIST,NUM_SERVERS,LAM))] = avg_wait
 
-print('Third loop done after '+str(time.time()-start)+' minutes')
+print('Third loop done after '+str((time.time()-start)/60)+' minutes')
 
 
 #Save dataframe of simulations to csv, to make graphs in jupyter
