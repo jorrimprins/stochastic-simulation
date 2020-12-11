@@ -1,7 +1,6 @@
 import time
 import numpy as np
 import pandas as pd
-# from main import ODE_error, hillclimber, sim_an, gen_al
 import warnings
 import scipy
 from sklearn.metrics import mean_squared_error, mean_absolute_error
@@ -310,7 +309,6 @@ def sim_an(function,data,t,params0=(0,0,0,0),evalfunc='RMSE',stepsize=0.25,
 #     pd.DataFrame(conv_dict).to_csv('{}-conv.csv'.format(eval))
 #     pd.DataFrame(param_dict).to_csv('{}-params.csv'.format(eval))
 
-
 print('Simulations with varying startvalues and cooling took {} seconds'.format(time.time()-start))
 # np.random.seed(seedy)
 # reps = 50
@@ -350,8 +348,8 @@ print('Simulations with varying startvalues and cooling took {} seconds'.format(
 #     pd.DataFrame({'HC':params_HC,'SA':params_SA}).to_csv('./Data/optimal-params-{}.csv'.format(eval))
 
 # ## Estimating the three models and its parameters on part of data, see convergence behavior and performance
-reps = 1
-n_iter = 50
+reps = 25
+n_iter = 5000
 np.random.seed(seedy)
 sizes = np.arange(100,0,-10)
 shortlist = ['lessx','lessy','lessboth']
