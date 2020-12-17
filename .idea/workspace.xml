@@ -6,10 +6,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5f21d6a-b6cc-46bf-bb76-66292d29073a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment-3/experiments2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-3/experiments_backup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-3/experiments.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3/experiments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2/visualisation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2/visualisation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/.ipynb_checkpoints/visualisation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3/.ipynb_checkpoints/visualisation-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/HC-fulldata-avg-conv-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/HC-fulldata-avg-conv-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/HC-fulldata-overall-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/HC-fulldata-overall-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/SA-fulldata-avg-conv-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/SA-fulldata-avg-conv-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/SA-fulldata-overall-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/SA-fulldata-overall-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/fulldata-best-params-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/fulldata-best-params-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/rndm-frac-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/10reps/rndm-frac-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/HC-fulldata-avg-conv-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/HC-fulldata-avg-conv-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/HC-fulldata-overall-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/HC-fulldata-overall-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/SA-fulldata-avg-conv-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/SA-fulldata-avg-conv-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/SA-fulldata-overall-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/SA-fulldata-overall-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/fulldata-best-params-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/25reps/fulldata-best-params-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/HC-stepsize-MAE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/HC-stepsize-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/HC-stepsize-RMSE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/HC-stepsize-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/SA-stepsizeMClen-MAE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/SA-stepsizeMClen-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/SA-stepsizeMClen-RMSE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Archive/SA-stepsizeMClen-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/MAE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/RMSE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/optimal-MAE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/optimal-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/optimal-RMSE-conv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/optimal-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/optimal-params-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/optimal-params-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/params-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/Data/Usable/params-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/experiments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/experiments2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/experiments_backup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-lessboth-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-lessboth-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-lessx-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-lessx-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-lessy-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-lessy-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-nopeaks-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-nopeaks-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-onlypeaks-MAE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/fracdata-onlypeaks-RMSE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3/visualisation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3/visualisation.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +132,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment-3/experiments.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment-3/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,15 +379,15 @@
       <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="430" y="243" key="#Notifications/0.23.1440.779@0.23.1440.779" timestamp="1604394760388" />
-    <state x="184" y="58" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607617696643">
+    <state x="184" y="58" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608224198074">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="58" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1607617696643" />
+    <state x="184" y="58" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1608224198074" />
     <state x="184" y="74" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.779@0.23.1440.779" timestamp="1606393626614" />
-    <state x="852" y="41" width="539" height="330" key="#xdebugger.evaluate" timestamp="1607678193384">
+    <state x="814" y="52" width="539" height="330" key="#xdebugger.evaluate" timestamp="1608224509880">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="852" y="41" width="539" height="330" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1607678193384" />
+    <state x="814" y="52" width="539" height="330" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1608224509880" />
     <state x="911" y="171" key="#xdebugger.evaluate/0.23.1440.779@0.23.1440.779" timestamp="1606394413076" />
     <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1606435614008">
       <screen x="0" y="0" width="1440" height="900" />
@@ -349,53 +406,53 @@
       <screen x="0" y="23" width="1440" height="779" />
     </state>
     <state x="467" y="286" key="Github.CreatePullRequestDialog/0.23.1440.779@0.23.1440.779" timestamp="1604396148669" />
-    <state width="709" height="245" key="GridCell.Tab.0.bottom" timestamp="1607679580343">
+    <state width="1031" height="301" key="GridCell.Tab.0.bottom" timestamp="1608224512707">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="709" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607679580343" />
+    <state width="1031" height="301" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1608224512707" />
     <state width="709" height="245" key="GridCell.Tab.0.bottom/0.23.1440.779@0.23.1440.779" timestamp="1606394249221" />
     <state width="1419" height="302" key="GridCell.Tab.0.bottom/0.23.1440.781@0.23.1440.781" timestamp="1604586781558" />
-    <state width="709" height="245" key="GridCell.Tab.0.center" timestamp="1607679580342">
+    <state width="1031" height="301" key="GridCell.Tab.0.center" timestamp="1608224512706">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="709" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607679580342" />
+    <state width="1031" height="301" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1608224512706" />
     <state width="709" height="245" key="GridCell.Tab.0.center/0.23.1440.779@0.23.1440.779" timestamp="1606394249220" />
     <state width="1419" height="302" key="GridCell.Tab.0.center/0.23.1440.781@0.23.1440.781" timestamp="1604586781557" />
-    <state width="709" height="245" key="GridCell.Tab.0.left" timestamp="1607679580342">
+    <state width="1031" height="301" key="GridCell.Tab.0.left" timestamp="1608224512705">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="709" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607679580342" />
+    <state width="1031" height="301" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1608224512705" />
     <state width="709" height="245" key="GridCell.Tab.0.left/0.23.1440.779@0.23.1440.779" timestamp="1606394249219" />
     <state width="1419" height="302" key="GridCell.Tab.0.left/0.23.1440.781@0.23.1440.781" timestamp="1604586781557" />
-    <state width="709" height="245" key="GridCell.Tab.0.right" timestamp="1607679580343">
+    <state width="1031" height="301" key="GridCell.Tab.0.right" timestamp="1608224512706">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="709" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607679580343" />
+    <state width="1031" height="301" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1608224512706" />
     <state width="709" height="245" key="GridCell.Tab.0.right/0.23.1440.779@0.23.1440.779" timestamp="1606394249220" />
     <state width="1419" height="302" key="GridCell.Tab.0.right/0.23.1440.781@0.23.1440.781" timestamp="1604586781558" />
-    <state width="1043" height="301" key="GridCell.Tab.1.bottom" timestamp="1607679580336">
+    <state width="1031" height="301" key="GridCell.Tab.1.bottom" timestamp="1608224512709">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1043" height="301" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607679580336" />
-    <state width="709" height="301" key="GridCell.Tab.1.bottom/0.23.1440.779@0.23.1440.779" timestamp="1607360084836" />
+    <state width="1031" height="301" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1608224512709" />
+    <state width="1032" height="301" key="GridCell.Tab.1.bottom/0.23.1440.779@0.23.1440.779" timestamp="1608207617736" />
     <state width="1419" height="302" key="GridCell.Tab.1.bottom/0.23.1440.781@0.23.1440.781" timestamp="1604586781559" />
-    <state width="1043" height="301" key="GridCell.Tab.1.center" timestamp="1607679580335">
+    <state width="1031" height="301" key="GridCell.Tab.1.center" timestamp="1608224512708">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1043" height="301" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607679580335" />
-    <state width="709" height="301" key="GridCell.Tab.1.center/0.23.1440.779@0.23.1440.779" timestamp="1607360084832" />
+    <state width="1031" height="301" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1608224512708" />
+    <state width="1032" height="301" key="GridCell.Tab.1.center/0.23.1440.779@0.23.1440.779" timestamp="1608207617733" />
     <state width="1419" height="302" key="GridCell.Tab.1.center/0.23.1440.781@0.23.1440.781" timestamp="1604586781559" />
-    <state width="1043" height="301" key="GridCell.Tab.1.left" timestamp="1607679580335">
+    <state width="1031" height="301" key="GridCell.Tab.1.left" timestamp="1608224512707">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1043" height="301" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607679580335" />
-    <state width="709" height="301" key="GridCell.Tab.1.left/0.23.1440.779@0.23.1440.779" timestamp="1607360084796" />
+    <state width="1031" height="301" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1608224512707" />
+    <state width="1032" height="301" key="GridCell.Tab.1.left/0.23.1440.779@0.23.1440.779" timestamp="1608207617730" />
     <state width="1419" height="302" key="GridCell.Tab.1.left/0.23.1440.781@0.23.1440.781" timestamp="1604586781558" />
-    <state width="1043" height="301" key="GridCell.Tab.1.right" timestamp="1607679580335">
+    <state width="1031" height="301" key="GridCell.Tab.1.right" timestamp="1608224512708">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1043" height="301" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607679580335" />
-    <state width="709" height="301" key="GridCell.Tab.1.right/0.23.1440.779@0.23.1440.779" timestamp="1607360084834" />
+    <state width="1031" height="301" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1608224512708" />
+    <state width="1032" height="301" key="GridCell.Tab.1.right/0.23.1440.779@0.23.1440.779" timestamp="1608207617734" />
     <state width="1419" height="302" key="GridCell.Tab.1.right/0.23.1440.781@0.23.1440.781" timestamp="1604586781559" />
     <state x="450" y="122" key="RollbackChangesDialog" timestamp="1604396220940">
       <screen x="0" y="23" width="1440" height="779" />
@@ -411,11 +468,11 @@
     </state>
     <state x="320" y="149" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606435615723" />
     <state x="320" y="152" key="Vcs.Push.Dialog.v2/0.23.1440.779@0.23.1440.779" timestamp="1605629506468" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1607639817139">
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1608207922753">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1607639817139" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup/0.23.1440.779@0.23.1440.779" timestamp="1607167513315" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1608207922753" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.23.1440.779@0.23.1440.779" timestamp="1608203210650" />
     <state x="474" y="191" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1604584502722">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -424,13 +481,20 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1604586185107" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1607377577275">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1608067159271">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1607377577275" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1608067159271" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignment-3/main.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
