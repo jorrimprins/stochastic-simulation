@@ -9,4 +9,5 @@ This is a repository for the Stochastic Simulation course at the University of A
 #### Assignments:
 1. The Mandelbrot set and its convergence properties.
 2. Queueing systems and the use of multiple servers.
+3. Reverse engineering Lotka-Volterra equations.
 
